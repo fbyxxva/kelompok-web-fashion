@@ -151,13 +151,15 @@ body {
 /* About Section */
 .about,
 .category,
-.contact {
+.contact,
+.information {
   padding: 8rem 7% 1.4rem;
 }
 
 .about h2,
 .category h2,
-.contact h2 {
+.contact h2,
+.information h2 {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 3rem;
@@ -166,7 +168,8 @@ body {
 
 .about h2 span,
 .category h2 span,
-.contact h2 span {
+.contact h2 span,
+.information h2 span {
   color: var(--primary);
 }
 
@@ -221,6 +224,7 @@ body {
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
+  transition: all 0.4s;
 }
 
 .category-style {
@@ -230,11 +234,115 @@ body {
 .category .row .category-style img {
   border-radius: 30%;
   width: 50%;
+  transition: all 0.4s;
+}
+
+.category .row .category-style img:hover {
+  transform: scale(0.8);
 }
 
 .category .row .category-style .category-style-title {
   margin-top: 1.5rem auto 1rem;
   color: #c9c9c9;
+}
+
+/* Description Section */
+.information {
+  background-color: #212121;
+}
+.information .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+.info img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.info-style{
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 1rem;
+}
+
+.box{
+  border:1px solid #fff ;
+  padding: 10px;
+}
+
+.info h5 {
+  color: #999b9f;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.info h4 {
+  color: #c9c9c9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* INFO 1 */
+.text{
+  color: #707070;
+  font-size: 15px;
+  max-width: 500;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.moreText{
+  display: none;
+}
+.read-more-btn{
+  padding: 6px 14px;
+  background-color: rgb(168, 168, 168);
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.text.show-more .moreText{
+  display: inline;
+}
+.text.show-more .moreText{
+  display: inline;
+}
+.text.show-more .dots{
+  display: none;
+}
+
+/* INFO 2 */
+.text2 {
+  color: #707070;
+  font-size: 15px;
+  max-width: 500;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+.moreText2{
+  display: none;
+}
+.read-more-btn2{
+  padding: 6px 14px;
+  background-color: rgb(168, 168, 168);
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.text2.show-more .moreText2{
+  display: inline;
+}
+.text2.show-more .dots{
+  display: none;
 }
 
 /* Contact Section */
